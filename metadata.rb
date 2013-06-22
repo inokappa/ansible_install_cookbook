@@ -1,6 +1,6 @@
 name             'ansible_install_cookbook'
-maintainer       'YOUR_COMPANY_NAME'
-maintainer_email 'YOUR_EMAIL'
+maintainer       'inokappa'
+maintainer_email 'inokara@gmail.com'
 license          'All rights reserved'
 description      'Installs/Configures ansible_install_cookbook'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
