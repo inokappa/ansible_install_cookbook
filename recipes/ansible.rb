@@ -15,7 +15,7 @@ bash "enable_epel" do
     sed -i 's/enabled=0/enabled=1/g' #{node['epel']['repo_file_path']} && \
     touch #{node['epel']['repo_dir_path']}/eple.enabled
   EOH
-  #not_if {File.exists?(node['epel']['repo_dir_path']/eple.enabled)}
+  not_if {File.exists?(node['epel']['repo_enabled_path'])}
 end
 
 package "ansible" do
